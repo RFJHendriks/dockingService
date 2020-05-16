@@ -16,9 +16,9 @@ public class DockingStation {
 	private long dockingId;
 	
 	@NaturalId
-	@Column(name = "NAAM", unique = true)
+	@Column(name = "NAME", unique = true)
 	@NotBlank(message = "DockingStationName cant be empty")
-	private String naam;
+	private String name;
 	
 	private Double lng;
 	private Double lat;
@@ -39,12 +39,12 @@ public class DockingStation {
 		this.dockingId = dockingId;
 	}
 
-	public String getNaam() {
-		return naam;
+	public String getName() {
+		return name;
 	}
 
-	public void setNaam(String naam) {
-		this.naam = naam;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Double getLng() {
